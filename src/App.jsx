@@ -20,10 +20,12 @@ function App() {
         setlaoding(true);
         const name = e.target.username.value;
         const twitter = e.target.twitter.value;
-        const data = { name: name,
-           image: "QmNMGJbxVuQVzuhR5x4BRCb5ku2qRnSznisBeQnihnLuh3",
-           description:"AN Nft PFP for pass",
-            external_url: `https://twitter.com/${twitter}` };
+        const data = {
+          name: name,
+          image: "QmNMGJbxVuQVzuhR5x4BRCb5ku2qRnSznisBeQnihnLuh3",
+          description: "AN Nft PFP for pass",
+          external_url: `https://twitter.com/${twitter}`
+        };
         const dataString = JSON.stringify(data);
         const { cid } = await ipfs.add(dataString);
         const tokenUrl = cid.toString();
@@ -46,7 +48,7 @@ function App() {
   return (
     <div className="container">
       <nav>
-        <a href="/"><span>STRT</span>PFP</a>
+        <a href="/"><span>P</span>F<span>P</span></a>
         <ConnectButton />
       </nav>
       <form action="" onSubmit={onSubmit}>
