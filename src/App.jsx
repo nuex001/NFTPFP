@@ -52,6 +52,7 @@ function App() {
         <ConnectButton />
       </nav>
       <form action="" onSubmit={onSubmit}>
+        <h1>MINT NOW</h1>
         <input type="text" name='username' placeholder='Username' required />
         <input type="text" name='twitter' placeholder='Twitter Username' required />
         <button>
